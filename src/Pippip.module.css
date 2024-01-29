@@ -1,0 +1,55 @@
+.layout {
+}
+
+.actions_group {
+  display: flex;
+  justify-content: center;
+  padding-block: 1rem;
+  border-bottom: solid 1px #000;
+}
+
+.actions_group button {
+  background-color: orangered;
+  color: #fff;
+  padding: 4px 8px;
+  border: 1px solid #000;
+}
+
+.content {
+  display: flex;
+}
+
+.components_group {
+  min-width: 300px;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #000;
+}
+
+.main_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.view_area_group {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  min-height: 70vh;
+  border-bottom: 1px solid #000;
+  width: 100%;
+}
+
+.properties_group {
+  padding-inline-start: 1rem;
+  min-height: 200px;
+}
+
+.hide {
+  opacity: 0;
+}
+.fade {
+  opacity: 0.5;
+}

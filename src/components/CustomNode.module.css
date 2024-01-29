@@ -1,0 +1,34 @@
+.node_contain {
+  display: flex;
+}
+.node__input {
+  outline: none;
+  border: none;
+  max-width: 100%;
+  text-align: center;
+  /* position: relative; */
+}
+
+.add_button {
+  position: absolute;
+  /* opacity: 0; */
+  background: transparent;
+  border: none;
+  font-weight: 800;
+}
+
+.add_button:hover {
+  opacity: 1;
+}
+
+.add_button_right {
+  top: 0;
+  right: 0;
+  transform: translate(100%, 50%);
+}
+.add_button_bottom {
+  top: 0;
+  bottom: 0;
+  transform: translate(-50%, 200%);
+  height: max-content;
+}
