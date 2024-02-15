@@ -22,7 +22,7 @@ export const deepClone = (obj) => {
 };
 
 let childrenX = 0;
-let space = 200;
+let space = 100;
 export const indexTree = (root, level = 0, siblingLevel = 0) => {
   root.level = level + 1;
   root.siblingLevel = siblingLevel + 1;
@@ -43,8 +43,10 @@ export const indexTree = (root, level = 0, siblingLevel = 0) => {
 
 export function convertCamelToTitleCase(camelCaseString) {
   // Add a space before all uppercase letters (except the first one)
-  const titleCaseString = camelCaseString.replace(/([A-Z])/g, ' $1');
-  
+  const titleCaseString = camelCaseString.replace(/([A-Z])/g, " $1");
+
   // Capitalize the first letter and trim any leading whitespace
-  return titleCaseString.charAt(0).toUpperCase() + titleCaseString.slice(1).trim();
+  return (
+    titleCaseString.charAt(0).toUpperCase() + titleCaseString.slice(1).trim()
+  );
 }

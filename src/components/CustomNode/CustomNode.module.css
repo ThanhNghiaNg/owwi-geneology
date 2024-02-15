@@ -12,13 +12,13 @@
 .add_button {
   position: absolute;
   /* opacity: 0; */
-  background: transparent;
+  /* background: transparent; */
   border: none;
   font-weight: 800;
 }
 
 .add_button:hover {
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 .add_button_right {
@@ -29,6 +29,11 @@
 .add_button_bottom {
   top: 0;
   bottom: 0;
-  transform: translate(-50%, 200%);
+  transform: translate(3.4rem, 2.35rem);
   height: max-content;
+}
+
+.toggle_button {
+  position: absolute;
+  right: 0;
 }

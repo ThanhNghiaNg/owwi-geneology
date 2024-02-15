@@ -1,11 +1,14 @@
 import React from "react";
 import MainView from "./MainView";
 import Pippip from "./Pippip";
+import { ReactFlowProvider } from "reactflow";
 
 function App(props) {
   return (
     <div>
-      <MainView />
+      <ReactFlowProvider>
+        <MainView />
+      </ReactFlowProvider>
       {/* <Pippip /> */}
     </div>
   );
